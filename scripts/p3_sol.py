@@ -58,7 +58,7 @@ if __name__ == '__main__':
 	H_4 = np.matmul(tran_y, H_4) 
 	print('Final homogeneous transformations matrix H_4 is:\n',H_4) 
 
-
+	# extra function for further testing
 	def vec(x,y,z):
 		#Define a vector as an numpy and transpose it to a column vector.
 		vec = np.array([[x, y, z,1.0]]).T 
@@ -81,5 +81,5 @@ if __name__ == '__main__':
 	v_test = vec(0,1,1) 
 	print('The test vector is:\n',v_test)
 	v_test_transformed = H_5.dot(v_test)
-	print('The transformed vector (transformations about CURRENT FRAME) is:\n',v_test_transformed)
+	print('The transformed vector (transformations(rotations and translations) about CURRENT FRAME) is \n',v_test_transformed)
 	

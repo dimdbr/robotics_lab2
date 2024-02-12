@@ -4,7 +4,7 @@ import numpy as np
 
 # define 6 basic funcions for homogeneous transformation using slides
 
-# translation on 3 axes
+# translation along 3 axes
 def trans_x_a(a): 
 	trans_x = np.array([[1.0, 0.0, 0.0, a],
 						[0.0, 1.0, 0.0, 0.0],
@@ -26,7 +26,7 @@ def trans_z_c(c):
 						[0.0, 0.0, 0.0, 1.0]])
 	return trans_z
 	
-# rotation on 3 axes	
+# rotation about 3 axes	
 def rot_x_a(alpha): 
 	rot_x = np.array([[1.0, 0.0, 0.0, 0.0],
 				     [0.0, math.cos(alpha), -math.sin(alpha), 0.0],
